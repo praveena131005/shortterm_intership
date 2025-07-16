@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title>Loop through Elements</title> 
+</head>
+<body> 
+ <p>Hello</p> 
+ <p>World</p> 
+ <button onclick="updateText()">Change All</button> 
+ <script> 
+ function updateText() { 
+ const paras = document.getElementsByTagName("p"); 
+ for (let i = 0; i < paras.length; i++) { 
+ paras[i].textContent = "Updated!";  }  } 
+ </script> 
+</body> 
+</html>

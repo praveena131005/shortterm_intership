@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title>Create Element on Click</title> 
+</head> 
+<body>
+<button onclick="createPara()"> Paragraph</button> 
+ <div id="output"></div> 
+ <script> 
+ function createPara() { 
+ let para = document.createElement("p"); 
+ para.textContent = "we can create an action by clicking."; 
+ document.getElementById("output").appendChild(para);  } 
+ </script> 
+</body> 
+</html>

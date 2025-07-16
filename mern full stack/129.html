@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title>Toggle Visibility</title> 
+</head> 
+<body> 
+ <div id="box">Toggle me</div> 
+ <button onclick="toggleBox()">Toggle message</button> 
+ <script> 
+ function toggleBox() {
+const box = document.getElementById("box"); 
+ if (box.style.display === "none") { 
+ box.style.display = "block"; 
+ } else { 
+ box.style.display = "none";  }  } 
+ </script> 
+</body> 
+</html>

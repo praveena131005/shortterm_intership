@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <style> 
+    .container { 
+      display: flex; 
+      gap: 10px;     } 
+    .box { 
+      width: 100px; 
+height: 100px; 
+      background-color: pink; 
+      color: white; 
+      text-align: center; 
+      line-height: 100px;    } 
+    @media (max-width:900px) { 
+      .container { 
+        flex-direction: row-reverse;      }     } 
+    @media (max-width: 600px) { 
+      .container { 
+        flex-direction: column-reverse;    }   } 
+  </style> 
+  <title>Media Query - Flex Direction</title> 
+</head> 
+<body> 
+  <div class="container"> 
+  <div class="box">Option1</div> 
+    <div class="box">Option2</div> 
+    <div class="box">Option3</div> 
+  </div>
+</body>
+</html> 

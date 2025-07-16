@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+input::placeholder, textarea::placeholder{ 
+color: gray; 
+font-style: italic; }
+input[type="text"],textarea{
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;}
+input[type="submit"]{ background-color:black;
+border: none;
+color: lightyellow;}
+</style> 
+<title>Placeholder Styling</title> 
+</head> 
+<body>
+    <input type="text" name="name" placeholder="product name"><br>
+    <input type="text" name="email" placeholder="product ID"><br>
+    <textarea name="message" placeholder="Write your review.."></textarea><br>
+    <input type="submit" value="Send Feedback">
+</body> 
+</html>

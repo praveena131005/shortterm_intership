@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title>Input Value</title> 
+</head> 
+<body> 
+ <input type="text" id="nameInput" placeholder="Enter your email"> 
+ <button onclick="getName()">Submit</button>
+<p id="output"></p> 
+ <script> 
+ function getName() { 
+ const name = document.getElementById("nameInput").value; 
+ document.getElementById("output").textContent = "This is my email-joshna@gmail.com " + name; } 
+ </script> 
+</body> 
+</html>

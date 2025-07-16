@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>getElementsByClassName Example</title>
+</head>
+<body>
+  <p class="class">1st class</p>
+  <p class="class">2nd class</p>
+  <button onclick="updateClass()">Update Class</button>
+  <script>
+    function updateClass() {
+      const elements = document.getElementsByClassName("class");
+      elements[0].textContent = "First class Updated!"; }
+  </script>
+</body>
+</html>

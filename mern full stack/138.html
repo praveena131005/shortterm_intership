@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+  <title>forEach Table Example</title>
+</head> 
+<body> 
+  <table border="1" id="dataTable"> 
+    <tr><th>Item</th><th>Price</th></tr> 
+  </table> 
+  <script> 
+    const Items = [ 
+      { Item: "laddu", price: 10 }, 
+      { Item: "rasmali", price: 50 }, 
+      { Item: "kowa", price: 5 }    ];
+    Items.forEach(item => { 
+      const row = `<tr><td>${item.Item}</td><td>${item.price}</td></tr>`; 
+      document.getElementById("dataTable").innerHTML += row;  }); 
+  </script> 
+</body>
+</html>
